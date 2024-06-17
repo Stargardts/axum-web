@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTMX Sample</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- <link rel="stylesheet" type="text/css" href="x-sample.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class=""text-center>
+        <h1 class="text-2xl font-bold my-5">Simple htmx example</h1>
+        <button hx-get="/users" hx-confirm="Are you sure?" hx-target="#users" class="bg-blue-500 text-white py-2p px-3 my-5 rounded-lg">Fetch users</button>
+        <div id="users" class="my-5"></div>
+    </div>
+</body>
+</html>>
